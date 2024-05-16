@@ -1,0 +1,262 @@
+body {
+    color: #3f3c37;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: 'core sans';
+    src: url(../fonts/Core\ Sans\ M\ W01\ 65\ Bold.ttf)
+}
+
+
+h1, h2, h3 {
+    font-family: 'core sans';
+}
+
+.top-hero {
+    background-color: #3f3c37;
+    width: 100%;
+}
+
+.top {
+    width: 1920px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.top img {
+    width: 150px;
+}
+
+.top ul {
+    margin: 30px 100px;
+}
+
+.top li {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.top li:hover {
+    background-color:#FED001;
+    color: #3f3c37;
+}
+
+.top a {
+    text-decoration: none;
+    color: #FED001;
+    margin: 0;
+    border: 2px solid #FED001;
+    padding: 5px
+}
+
+.top a:hover {
+    color: #3f3c37;
+    background-color:#FED001;
+}
+
+.top div {
+    margin: 10px 100px;
+}
+
+.hero {
+    background: linear-gradient(to top, #FFFF3A 0%, white 100%);
+}
+
+.main__1 {
+    width: 1920px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__1 h1 {
+    font-size: 55px;
+    text-align: left;
+    height: 250px;
+    width: 450px;
+    line-height: 70px;
+   
+    margin: 150px 0 50px;
+}
+
+.main__1 a {
+    background-color: #FED001;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3f3c37;
+    font-weight:500;
+}
+
+.main__1 a:hover {
+    background-color: #3f3c37;
+    color: #FAFAFA;
+}
+
+.main__1 img {
+    margin-top: 30px;
+}
+
+.sections {
+    background-color: #FAFAFA;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.sections h2 {
+    color: #071D2E;
+    padding: 80px 0 ;
+    font-size: 35px;
+    width: 1920px;
+    margin: auto;
+}
+
+.div__article {
+    width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sections article {
+    display: inline-block;
+    width: 20%;
+    margin: 0 20px;
+    background-color:#ffffff ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    text-align: left;
+}
+
+.div__article h3, p {
+    padding: 0 30px 30px;
+}
+
+.sections article img {
+    width: 100%;
+}
+
+.button {
+    margin: auto;
+    padding: 90px 0;
+    background-color: #FAFAFA;
+    color: #3f3c37;
+    font-weight:500;
+}
+
+.button section {
+    width: 1920px;
+    margin: auto;
+    text-align: center;
+}
+
+.button a {
+    background-color: #FED001;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3f3c37;
+}
+
+.button a:hover {
+    background-color: #3f3c37;
+    color: #FAFAFA;
+}
+
+.sub__section {
+    background-color: #003464;
+    width: 100%;
+    margin: auto;
+    height: 550px;
+    display: flex;
+    
+}
+
+.sub__section img {
+    margin-top: 50px;
+}
+
+.background {
+    margin: auto;
+    display: flex;
+    margin: auto;
+    width: 1920px;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.txt {
+    padding: 5px;
+    display: inline;
+    margin: auto;
+    width: 500px;
+
+}
+
+.background h2 {
+    padding:  10px;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.background p {
+    padding: 10px;
+    
+}
+
+footer {
+    width: 100%;
+    justify-content: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.sub__footer {
+    width: 100%;
+    margin: auto;
+}
+
+.contato {
+    color:#071D2E;
+    padding-bottom: 50px;
+    font-size: 35px;
+    width: 1920px;
+    margin: 0;
+
+}
+
+.map {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contato {
+    margin: auto;
+    width: 1270px;
+    text-align: right;
+    padding: 30px 0;
+}
+
+#footer__end {
+    padding: 30px 0;
+    background-color: #3f3c37;
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
