@@ -65,6 +65,7 @@ h2 {
 .container {
     max-width: 127.6rem; /*1276px*/
     margin: auto;
+
 }
 
 .section_title {
@@ -150,3 +151,31 @@ h2 {
     box-shadow: 1px 1px 16px #2a2a2a23;
 }
 
+.escola {
+    display: flex;
+    gap: 6rem;
+    padding-top: 6rem;
+    max-height: 540px;
+}
+
+.escola_title {
+    font-size: 3.2rem;
+    margin-top: 2rem;
+}
+
+.escola p{
+    font-size: 1.8rem;
+    line-height: 2.75rem;
+}
+
+.contatos_address {
+    text-align: right;
+    font: normal 400 1.8rem "Inter", sans-serif;
+    padding: 3rem 0;
+}
+
+.footer {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 4.5rem;
+}
