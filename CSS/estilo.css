@@ -1,262 +1,152 @@
-body {
-    color: #3f3c37;
+:root {
+    --primary-color: #fed001;
+}
+
+html {
+    font:400 62.5%  "Inter", sans-serif;
+}
+
+p, a {
+   font-size: 1.6rem; /*equivalente a 10px*/ 
+}
+
+nav a {
+    color: inherit; /*herança - herda do elemento acima(mais proximo)*/
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4.8rem; /*48px*/
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+/* h3 {
+    font-size: 3.2rem;
+} */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.2rem 3.2rem;
+    display: inline-block;
+}
+
+.section_btn {
+    margin: 7rem 0;
+}
+
+.wrapperContainer {
+    padding-top: 1px; /*para fechar o espaçamento do top de cada div wrapperContainer*/
+}
+
+.wrapperContainer-dark {
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.wrapperContainer-dark2 {
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.wrapperContainer-ligth {
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 127.6rem; /*1276px*/
     margin: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@font-face {
-    font-family: 'core sans';
-    src: url(../fonts/Core\ Sans\ M\ W01\ 65\ Bold.ttf)
+.section_title {
+    padding: 7rem 0;
+    text-align: center;
+    margin: 0;
 }
 
-
-h1, h2, h3 {
-    font-family: 'core sans';
-}
-
-.top-hero {
-    background-color: #3f3c37;
-    width: 100%;
-}
-
-.top {
-    width: 1920px;
-    margin: auto;
-    justify-content: center;
+.header {
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    align-items: center;
+    color: var(--primary-color);
+    padding: 2rem 0;
 }
 
-.top img {
-    width: 150px;
+.header_nav a {
+    padding: .5em 1.15em;
+    border: solid .15rem;
+    letter-spacing: .1rem
 }
 
-.top ul {
-    margin: 30px 100px;
-}
-
-.top li {
+.header_nav ul {
+    display: flex; /*ou inline-block na li*/
+    gap: .8rem;
     list-style-type: none;
     text-transform: uppercase;
-    display: inline-block;
-    margin-right: 15px;
+    /*display flex na ul permite utilizar o gap para espaçamaneto entre as li*/
 }
 
-.top li:hover {
-    background-color:#FED001;
-    color: #3f3c37;
+.header_nav a:hover{
+    background-color: var(--primary-color);
+    color: #2a2a2a;
 }
 
-.top a {
-    text-decoration: none;
-    color: #FED001;
+.heroBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+
+.wrapperContainer-hero {
+    background-image: linear-gradient(to top, yellow, white 75%);
+    
+}
+
+.cursos {
+    text-align: center;
+}
+
+.cursosContainer {
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+}
+
+.curso_card {
+    flex: 1;
+    
+}
+
+.curso_card img {
+    display: block;
+    width: 100%;
+}
+
+.curso_card h3 {
+    font-size: 2.4rem;
     margin: 0;
-    border: 2px solid #FED001;
-    padding: 5px
 }
 
-.top a:hover {
-    color: #3f3c37;
-    background-color:#FED001;
+.cursos_card p {
+    font-size: 1.8rem;
+    line-height: 1.5;
 }
 
-.top div {
-    margin: 10px 100px;
+.cursos_card_content {
+    padding: 3rem;
+    border: 1px solid #f1f1f1;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+    box-shadow: 1px 1px 16px #2a2a2a23;
 }
 
-.hero {
-    background: linear-gradient(to top, #FFFF3A 0%, white 100%);
-}
-
-.main__1 {
-    width: 1920px;
-    margin: auto;
-    justify-content: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-.main__1 h1 {
-    font-size: 55px;
-    text-align: left;
-    height: 250px;
-    width: 450px;
-    line-height: 70px;
-   
-    margin: 150px 0 50px;
-}
-
-.main__1 a {
-    background-color: #FED001;
-    padding: 10px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #3f3c37;
-    font-weight:500;
-}
-
-.main__1 a:hover {
-    background-color: #3f3c37;
-    color: #FAFAFA;
-}
-
-.main__1 img {
-    margin-top: 30px;
-}
-
-.sections {
-    background-color: #FAFAFA;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-.sections h2 {
-    color: #071D2E;
-    padding: 80px 0 ;
-    font-size: 35px;
-    width: 1920px;
-    margin: auto;
-}
-
-.div__article {
-    width: 1920px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-
-}
-
-.sections article {
-    display: inline-block;
-    width: 20%;
-    margin: 0 20px;
-    background-color:#ffffff ;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
-    text-align: left;
-}
-
-.div__article h3, p {
-    padding: 0 30px 30px;
-}
-
-.sections article img {
-    width: 100%;
-}
-
-.button {
-    margin: auto;
-    padding: 90px 0;
-    background-color: #FAFAFA;
-    color: #3f3c37;
-    font-weight:500;
-}
-
-.button section {
-    width: 1920px;
-    margin: auto;
-    text-align: center;
-}
-
-.button a {
-    background-color: #FED001;
-    padding: 10px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #3f3c37;
-}
-
-.button a:hover {
-    background-color: #3f3c37;
-    color: #FAFAFA;
-}
-
-.sub__section {
-    background-color: #003464;
-    width: 100%;
-    margin: auto;
-    height: 550px;
-    display: flex;
-    
-}
-
-.sub__section img {
-    margin-top: 50px;
-}
-
-.background {
-    margin: auto;
-    display: flex;
-    margin: auto;
-    width: 1920px;
-    color: white;
-    font-size: 16px;
-    line-height: 30px;
-}
-
-.txt {
-    padding: 5px;
-    display: inline;
-    margin: auto;
-    width: 500px;
-
-}
-
-.background h2 {
-    padding:  10px;
-    margin-bottom: 40px;
-    font-size: 35px;
-}
-
-.background p {
-    padding: 10px;
-    
-}
-
-footer {
-    width: 100%;
-    justify-content: center;
-    display: inline-block;
-    margin: auto;
-}
-
-.sub__footer {
-    width: 100%;
-    margin: auto;
-}
-
-.contato {
-    color:#071D2E;
-    padding-bottom: 50px;
-    font-size: 35px;
-    width: 1920px;
-    margin: auto;
-
-}
-
-.map {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 50px;
-}
-
-#contato {
-    margin: auto;
-    width: 1270px;
-    text-align: right;
-    padding: 30px 0;
-}
-
-#footer__end {
-    padding: 30px 0;
-    background-color: #3f3c37;
-    color: white;
-    width: 100%;
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 20px;
-}
